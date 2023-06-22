@@ -4,62 +4,66 @@
 
 *{
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
 }
 
 header{
-    display: flex;
-    min-height: 90px;
-    background-color: #0A4D68;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+    background-image: url(/img/ni.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 60px 0px;
+    text-align: center;
     position: sticky;
     top:0
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+header div{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.nombre{
+    color: #05bfdb;
+    font-size: 40px;
+    margin: 0 0 20px;
 }
 
 .logo{
-    display: flex;
     align-items: center;
 }
 
-.logo-img{
-    height: 150px;
-    width: 150px;
+img.logo2{
+    height: 300px;
+    width: 300px;
     margin-right: 10px;
 }
 
-.logo2{
-    height: 150px;
-    width: 150px;
+.nakv-lin{
+    display: flex;
+    justify-content: center;
+    background-color: #0A4D68;
+    font-size: 18px;
+    border-radius: 10px;
+    position: sticky;
+    top: 60px;
 }
 
-nav a{
-    font-weight: 500;
-    padding-right: 15px;
-    margin-right: 20px;
+.nakv-lin a{
+    text-decoration: none;
+    color: inherit;
+    padding: 14px 20px;
+    text-align: center;
 }
 
 nav a:hover{
     color: #00FFCA;
-}
-
-.nakv-lin{
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-.nombre{
-    color: #05BFDB;
-    font-size: 45px;
-    margin: 0;
-    justify-content: flex-start;
 }
 
 .main{
@@ -67,11 +71,6 @@ nav a:hover{
     text-align: center;
     font-family: "Schibsted+Grotesk", sans-serif;
     justify-content: center;
-}
-@media screen and (max-width: 700px){
-    main{flex-direction: column;
-    }
-    nav a{ font-size: 16px;}
 }
 
 .seccion{
@@ -94,20 +93,22 @@ img{
 }
 
 .inicio-consulta{
-    font-size: 18px;
-    margin: 20px;
+    font-size: 20px;
+    margin: 30px;
+    line-height: 1.5;
     font-weight: bold;
 }
 
 .parrafo{
     font-size: 18px;
+    line-height: 1.5;
     font-weight: 100px;
     margin: 20px;
 }
 
-.principal-boton{
+.principalboton{
     font-size: 20px;
-    background-color: #0a4d68;
+    background-color: #05BFDB;
     color: #fbfbfb;
     border: none;
     padding: 0.5em 1em;
@@ -120,11 +121,13 @@ img{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #088395;
-    padding: 10px;
-    height: auto;
-    width: 800px;
-    font-size: 18px;
+    background-image: url(/img/Niños.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25px;
+    height: 400px;
+    width: auto;
+    font-size: 20px;
     font-family:'Lexend Deca', sans-serif;
     margin: auto;
 }
@@ -132,11 +135,7 @@ img{
 .lista{
     align-items: center;
     text-align: justify;
-}
-
-.niño.img{
-   justify-content: center;
-   margin: 5px;
+    list-style: none;
 }
 
 :root{
@@ -144,24 +143,28 @@ img{
     --siguiente: #088395;
     --ultimo:#05bfdb;
     --transparente: #fbfbfb;
-    --otro:hsl(0, 0%, 95%);/*(background, headings, buttons)*/
+    --otro:hsl(0, 0%, 95%);
 }
 
 .main-container{
-    font-size: 15px;
+    font-size: 20px;
+    line-height: 1,5;
     font-family:'Lexend Deca';
     background: var(--otro);
     display: flex;
+    flex-direction: row;
     content: '\ee03';
-    justify-content: center;
-    align-content: center;
+    text-align: center;
+    margin: 10px;
+    align-items: center;
 }
 
 article{
-    margin: 10px;
-    align-content: center;
-    width: 600px;
-    height: 300px;
+    margin: 30px;
+    padding: 20px;
+    flex-basis: 1000px;
+    height: 600px;
+    text-align: center;
 }
 
 #uno{
@@ -183,75 +186,64 @@ img.article{
 h3{
     color: var(--transparente);
     font-family:'Big Shoulders Display', cursive;
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 50px ;
 }
 
 .article.p{
     line-height: 15px;
     margin-bottom: 20px;
     text-align: center;
-    margin: 5px;
 }
 
 #botton.article{
-    width: 148px;
-    height: 46px;
     border-radius: 45px;
     border-style: none;
     background-color: var(--otro);
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
-    text-align: center;
+    font-size: 20px;
+    text-align: justify;
     margin-top: 15px;
 }
 
 #primero{
     color: var(--coloruno);
+    margin: 20px;
+    width: 80px;
+    height: 40px;
 }
+
 #segundo{
     color:var(--siguiente);
+    margin: 20px;
+    width: 80px;
+    height: 40px;
 }
+
 #tercero{
         color: var(--coloruno);
-}
-
-*/solo para este apartado*/acomodar
-@media (min-widht:944px)
-{    .main-container{width: 924px;
-                     margin-top: 170px;
-    }
-    article{
-        height: 500px;
-    }
-    p.article{
-        margin-bottom: 80px;
-    }
-}
-
-.hablemos{
-    text-align: center;
-    padding: 40px 40px;
-    font-size: 28px;
-    color: #0f0f0f;
-    line-height: 20px 20px;
+        margin: 20px;
+        width: 80px;
+        height: 40px;
 }
 
 .ha{
-    padding: 40px 40px;
-    background-color:#fbfbfb;
-    border-color: #088395;
     text-align: center;
-    font-size: 18px;
+    padding: 40px 40px;
+    font-size: 20px;
+    color: #0f0f0f;
+    line-height: 20px 20px;
+    background-color:#fbfbfb;
+    text-align: center;
 }
 
-.p{
-    font-size: 18px;
+.hablemos.p{
+    font-size: 20px;
     line-height: 1.5;
-    text-align: center;
-    margin: 15px 15px;
-    padding: 100px 155px;
+    text-align: justify;
+    margin: 10px;
+    padding: 100px;
 }
 
 .frase{
@@ -265,55 +257,92 @@ h3{
 
 .servi{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: justify;
     background-color: #05BFDB;
-    padding: 100px;
-}
-
-.niña{
-   margin-right: 100px;
-   border-radius: 10px;
+    padding: 30px;
 }
 
 p.asesor{
-    font-size: 25px;
+    font-size: 20px;
+    margin: auto;
     text-align: center;
-    line-height: 1,5;
     font-family: Arial, Helvetica, sans-serif;
     color:#0f0f0f;
-    margin-top: 45px;
 }
 
-.pagina{
+img.niña{
+    margin-right: 100px;
+    border-radius: 10px;
+    margin: 25px;
+    border-radius: 100%;
+ }
+
+.gratis{
+    display: block;
+    color: #0f0f0f;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 42px;
+    background-color: aliceblue;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    -webkit-text-size-adjust: 100%;
     text-align: center;
+}
+
+.citamos{
+    font-size: 20px;
+    line-height: 29px;
+}
+
+#cita{
+    color: aliceblue;
+    background-color: #088395;
+    border-radius: 45px;
+    border-style: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 60px;
+    justify-content: center;
+    text-decoration: inherit;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-property: all;
+    transition-duration: .5s;
 }
 
 footer{
     background-color:#0a4d68;
-    box-sizing: border-box;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    min-height: 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; align-items: center;
+    padding: 10px;
+    color: #088395;
 }
 
+footer.pagina{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+
 h4{
-    font-size: 15px;
-    color: #05BFDB;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .iconos{
     min-width: 600px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .iconos a{
     text-decoration: none;
     font-size: 28px;
     width: 90px;
-    height: 90px;
+    height: 70px;
     line-height: 90px;
     text-align: center;
     background: #088395;
@@ -345,3 +374,30 @@ h4{
     align-content: center;
 }
 
+@media screen and (max-width:700px){
+    .nakv-lin {
+        flex-direction: column;
+    }
+    .main-container{
+        flex-direction: column;
+    }
+    article{
+        flex-basis: 100%;
+    }
+    .p{
+        font-size: 18px;
+    }
+}
+
+@media screen (min-width:1200px){
+    .main-container{
+        width: 900px;
+        margin-top: 170px;
+    }
+    article{
+        height: 500px;
+    }
+    p.article{
+        margin-bottom: 80px;
+    }
+}
