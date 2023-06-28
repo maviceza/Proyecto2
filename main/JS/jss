@@ -1,55 +1,15 @@
-// Utilizando querySelector() para seleccionar un elemento
 let h1Element = document.querySelector("h1");
 h1Element.style.color = "safari";
-
-// Utilizando querySelectorAll() para seleccionar varios elementos
-let  = document.querySelectorAll("");
-prxx[1].style.fontSize = "35px"; // Cambia el tamaño de fuente de los párrafos
+console.log(h1Element);
 
 
-// Utilizando querySelector() para seleccionar un elemento por su id
-let p3Element = document.querySelector("#parrafoAmarillo");
-p3Element.style.backgroundColor = "red"; // Cambia el fondo del tercer párrafo a amarillo
-
-const persona = {
-    nombre: "Juan",
-    edad: 20,
-    carrera: "Ingeniería",
-    promedio: 8.5,
-    apellido: "perez"
-}
-
-let datos = [1, true, "string", 4]
+let frase = document.querySelectorAll("frase");
+frase[1].style.fontsize= "30px";
+frase[2].style.color = "blue";
+console.log(frase);
 
 
-
-
-
-
-const estudiantes = [
-    {
-        nombre: "Juan",
-        edad: 20,
-        carrera: "Ingeniería",
-        promedio: 8.5
-    },
-    {
-        nombre: "María",
-        edad: 22,
-        carrera: "Medicina",
-        promedio: 9.2
-    },
-    {
-        nombre: "Carlos",
-        edad: 21,
-        carrera: "Diseño",
-        promedio: 7.8
-    }
-];
-
-
-
-estudiantes.forEach(function (estudiante) {
-    console.log(estudiante)
-});
+let servicio = document.querySelector("#parrafo");
+servicio.style.backgroundColor = "white";
+console.log(servicio);
 
