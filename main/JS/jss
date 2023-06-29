@@ -2,6 +2,9 @@ let h1Element = document.querySelector("h1");
 h1Element.style.color = "safari";
 console.log(h1Element);
 
+let CV = document.querySelector("CV");
+CV.style.color = "white";
+console.log(CV);
 
 let frase = document.querySelectorAll("frase");
 frase[1].style.fontsize= "30px";
