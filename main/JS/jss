@@ -16,3 +16,6 @@ let servicio = document.querySelector("#parrafo");
 servicio.style.backgroundColor = "white";
 console.log(servicio);
 
+let logo = document.querySelector("logo");
+logoElement.style.fontSize = "50px";
+console.log(logoElement);

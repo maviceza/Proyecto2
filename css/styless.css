@@ -177,7 +177,7 @@ img{
     flex-direction: row;
     content: '\ee03';
     text-align: center;
-    margin: 10px;
+    margin: 20px;
     align-items: center;
 }
 
@@ -185,7 +185,7 @@ article{
     margin: 30px;
     padding: 20px;
     flex-basis: 1000px;
-    height: 600px;
+    height: 500px;
     text-align: center;
 }
 
@@ -220,34 +220,33 @@ h3{
 }
 
 #botton.article{
-    border-radius: 45px;
-    border-style: none;
+    border-radius: 30px;
     background-color: var(--otro);
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 20px;
-    text-align: justify;
-    margin-top: 15px;
+    margin: 20px 20px;
+    width: 80px;
+    height: 40px;
 }
 
 #primero{
     color: var(--coloruno);
-    margin: 20px;
-    width: 80px;
-    height: 40px;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 #segundo{
     color:var(--siguiente);
-    margin: 20px;
-    width: 80px;
-    height: 40px;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 #tercero{
-        color: var(--coloruno);
-        margin: 20px;
-        width: 80px;
-        height: 40px;
+    color: var(--coloruno);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .ha{
@@ -282,7 +281,7 @@ h3{
     display: flex;
     text-align: justify;
     background-color: #05BFDB;
-    padding: 30px;
+    margin: 10px;
 }
 
 p.asesor{
@@ -406,13 +405,26 @@ h4{
     align-content: center;
 }
 
-.what1{
-    width: 50px;
-    height: 50px;
-    align-content: center;
-}
 
-@media screen and (max-width:700px){
+@media (max-width:700px){
+    .body{
+        font-size: 15px;
+    }
+    .img{
+        height: 80px;
+        width: 80px;
+    }
+    .img.logo{
+        height: 70px;
+        width: 70px;
+    }
+    img.niña{
+        height: 150px;
+        width: 150px;
+        border-radius: 10px;
+        border-radius: 100%;
+        margin: auto;
+    }
     .nakv-lin {
         flex-direction: column;
     }
@@ -420,7 +432,7 @@ h4{
         flex-direction: column;
     }
     article{
-        flex-basis: 50%;
+        flex-basis: 100%;
     }
     .p{
         font-size: 18px;
@@ -428,23 +440,13 @@ h4{
     p.asesor{
         font-size: 18px;
     }
-}
-
-@media screen (min-width:1200px){
-    .main-container{
-        width: 900px;
-        margin-top: 170px;
-    }
-
-    article{
-        height: 500px;
-    }
-
-    p.article{
-        margin-bottom: 80px;
+    .iconos a{
+        align-items: center;
+        margin: 5px;
 
     }
 
+@media (min-width:1200px){
     h1{
         font-size: 48px;
     }
