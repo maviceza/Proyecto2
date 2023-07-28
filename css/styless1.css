@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2? family= Style+Script & display=swap');
 
 *{
-    background: #f3f3f3;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
+
 header{
     background-color: #0A4D68;
-    padding: 60px 60px;
-    margin: 20px;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    height: 70px;
+    width: 100%;
 }
 
 h1{
@@ -16,41 +21,97 @@ h1{
     text-align: center;
 }
 
-.container{
-    margin: 40px;
-    text-align: justify;
+.sidebar{
     font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    justify-content: center;
-
-}
-
-img{
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-}
-
-.img.online{
+    line-height: 1,5;
+    background: var(--otro);
+    display: flex;
+    flex-direction: row;
+    content: '\ee03';
+    text-align: center;
     margin: 20px;
-    border: 100px;
-}
-
-.evaluacion{
-    font-size: 20px;
-    line-height: 1.5;
-    margin: 20px;
-    padding: 50px;
-    color: #000;
-    background-color: #0A4D68;
-    border-radius: 10px;
     align-items: center;
 }
 
-
-@media (max-width:700px){
+h2{
+    color: #0A4D68;
+    margin: 10px 10px;
+    font-family: 'Style Script', cursive;
+    font-size: 30px;
 }
 
-@media (min-width:1200px){
+img.evalua{
+    width: 600px;
+    height: 400px;
+    border-radius: 50%;
+}
 
+.side{
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.main{
+    width: auto;
+    margin: 10px;
+    font-size: 20px;
+    font-family:'Lexend Deca';
+    display: flex;
+    flex-direction: row;
+}
+
+article{
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+    font-size: 25px;
+    color: #00000e;
+    display: block;
+}
+
+#uno{
+    background-color: #05bfdb;
+}
+
+#dos{
+    background-color: #0A4D68;
+}
+
+h3{
+    color: #eaeaf1;
+    font-family:'Big Shoulders Display', cursive;
+    font-size: 30px;
+    margin: 15px;
+    text-align: center;
+}
+
+.contenedor{
+    margin: 15px;
+    text-align: justify;
+    padding: 20px;
+    line-height: 1,5px;
+}
+
+.box{
+    margin: 15px;
+    text-align: justify;
+    padding: 20px;
+    line-height: 1,5px;
+}
+
+img{
+    width: 400px;
+    border-radius: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+footer{
+    text-align: center;
+    color: #0A4D68;
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px;
+    font-family: 'Style Script', cursive;
 }

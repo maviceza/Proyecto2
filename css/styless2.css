@@ -1,78 +1,65 @@
 @import url('https://fonts.googleapis.com/css2? family= Style+Script & display=swap');
 
-*{
-    box-sizing: border-box;
-}
-
-body{
-    margin: 0;
-    padding: 0;
-}
-
 header{
-    background-image: url(/img/ni.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 60px 60px 0px;
+    background-color: #0A4D68;
+    padding: 20px 20px;
+    margin: 20px 20px;
+    height: 70px;
+    width: 100%;
+}
+
+h1{
+    color: #05bfdb;
+    font-size: 30px;
+    background-color: #0A4D68;
     text-align: center;
-    position: sticky;
-    top:0
 }
 
-header div{
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    font-size: 20px;
+h2{
+    color: #0A4D68;
+    margin: 50px 50px;
+    font-family: 'Style Script', cursive;
+    font-size: 30px;
+    text-align: center;
 }
 
-@media (max-width:700px){
-    .body{
-        font-size: 15px;
-    }
-    .img{
-        height: 80px;
-        width: 80px;
-    }
-    .img.logo{
-        height: 70px;
-        width: 70px;
-    }
-    img.niña{
-        height: 150px;
-        width: 150px;
-        border-radius: 10px;
-        border-radius: 100%;
-        margin: auto;
-    }
-    .nakv-lin {
-        flex-direction: column;
-    }
-    .main-container{
-        flex-direction: column;
-    }
-    article{
-        flex-basis: 100%;
-    }
-    .p{
-        font-size: 18px;
-    }
-    p.asesor{
-        font-size: 18px;
-    }
-    .iconos a{
-        align-items: center;
-        margin: 5px;
+.li{
+    font-size: 25px;
+    line-height: 1,5;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    align-items: center;
+    background-color: #05bfdb;
+}
 
-    }
+h3{
+    color: #0A4D68;
+    font-family:'Big Shoulders Display', cursive;
+    font-size: 30px;
+    margin: 15px;
+    text-align: center;
+}
 
-@media (min-width:1200px){
-    h1{
-        font-size: 48px;
-    }
+img{
+    width: 600px;
+    border-radius: 80%;
+    margin: 0 auto;
+    display: block;
+}
 
-    h2{
-        font-size: 32px;
-    }
+ul{
+    list-style-type: none;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    color: #0A4D68;
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px;
+    font-family: 'Style Script', cursive;
 }
