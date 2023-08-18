@@ -69,3 +69,27 @@ footer{
     text-align: center;
     margin: 10px 10px;
 }
+@media (max-width:700px){
+    header{
+    height: 70px;
+    width: 500px;
+    margin: 0;
+    }
+
+    img{
+    width: 200px;
+    height: 200px;
+    }
+
+    h1,h2,p,footer{
+    font-size: 20px;
+    }
+
+    ul,li{
+    font-size: 18px;
+    }
+
+    .baseline-class{
+    display: block;
+    }
+    }

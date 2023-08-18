@@ -12,44 +12,35 @@ body{
 }
 
 header{
-    background-image: url(/img/ni.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 60px 60px 0px;
-    text-align: center;
-    position: sticky;
-    top:0
-}
-
-header div{
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    font-size: 20px;
-}
-
-.nombre{
-    color: #05bfdb;
-    font-size: 40px;
-    margin: 0 0 20px;
+    display: flex;
+    background-color: #fbfcfccf;
+    min-height: 200px;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo{
+    display: flex;
     align-items: center;
 }
 
 img.logo2{
-    height: 300px;
-    width: 300px;
+    width: 200px;
+    height: 100px;
     margin-right: 10px;
+}
+
+.nombre{
+    color: #05BFDB;
+    font-size: 30px;
 }
 
 .nakvlin{
     display: flex;
     justify-content: center;
-    background-color: #0A4D68;
-    font-size: 18px;
+    background-color: #05bfdb;
+    font-size: 20px;
     border-radius: 10px;
     position: sticky;
     top: 60px;
@@ -304,10 +295,8 @@ img.niña{
     display: block;
     color: #0f0f0f;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     background-color: aliceblue;
-    padding-top: 30px 30px;
-    padding-bottom: 100px;
     -webkit-text-size-adjust: 100%;
     text-align: center;
 }
@@ -367,7 +356,7 @@ h4{
 }
 
 .iconos{
-    min-width: 600px;
+    min-width: 450px;
     display: flex;
     justify-content: center;
     margin: 10px 10px;
@@ -408,42 +397,41 @@ h4{
 
 
 @media (max-width:700px){
-    .body{
-        font-size: 15px;
-    }
-    .img{
-        height: 80px;
-        width: 80px;
-    }
-    .img.logo{
-        height: 70px;
-        width: 70px;
-    }
-    img.niña{
-        height: 150px;
-        width: 150px;
-        border-radius: 10px;
-        border-radius: 100%;
-        margin: auto;
-    }
-    .nakv-lin {
+   header{
         flex-direction: column;
     }
+
+    .nombre{
+        font-size: 18px;
+    }
+
+    .nakvlin{
+    font-size: 15px;
+    }
+
+    .nakv-lin {
+        padding: 10px 0px;
+    }
+
     .main-container{
         flex-direction: column;
     }
     article{
         flex-basis: 100%;
     }
-    .p{
-        font-size: 20px;
+
+    img.niña{
+        width: 150px;
+        height: 150px;
     }
-    p.asesor{
-        font-size: 20px;
+
+    p{
+       font-size: 15px;
     }
-    .iconos a{
-        align-items: center;
-        margin: 5px;
+
+    .iconos{
+        margin: 0px;
+        padding: 0px;
     }
 
 @media (min-width:1200px){
@@ -454,4 +442,4 @@ h4{
     h2{
         font-size: 32px;
     }
-}
+    }
